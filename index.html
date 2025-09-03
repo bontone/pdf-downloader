@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل الملف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // كلمة المرور المطلوبة
+        let password = prompt("ادخل كلمة المرور:");
+        if(password !== "1234") { // غير 1234 لكلمة مرورك الخاصة
+            alert("كلمة مرور خاطئة!");
+            window.location.href = "https://google.com"; // يعيد التوجيه لو كلمة المرور خطأ
+        }
+    </script>
+
+    <h1>مرحبا! اضغط لتحميل الملف</h1>
+    <a href="https://username.github.io/repo-name/file.pdf" download>تحميل PDF</a> <!-- غير الرابط لملفك -->
+</body>
+</html>
